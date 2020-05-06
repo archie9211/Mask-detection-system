@@ -96,9 +96,9 @@ files to mentions :
 
 train.py
 yolov3-tf3/models.py
-### Contributers :
+run.py
+detect.py
 
-Nageen Chand 
 
 ### References
 https://github.com/zzh8829/yolov3-tf2 (yolo implementation)
