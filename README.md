@@ -25,6 +25,7 @@ clone the repo
 ```
 https://github.com/archie9211/Mask-detection-system
 cd Mask-detection-system 
+pip3 install -r requirements.txt
 ```
 
 then download the yolo weights
