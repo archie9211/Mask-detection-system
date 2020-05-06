@@ -1,14 +1,30 @@
+# Mask Detection System 
 Mask Detection System using Yolov3 on custom made dataset : https://github.com/archie9211/Mask-Detection-Dataset
 
+
 This project uses Yolov3 for the mask detection on live stream video from either webcam or cctv.
+
+Dataset Used : [Repo Link](https://github.com/archie9211/Mask-Detection-Dataset/tree/30746c618d84df4e628bbd62a0349201ae800776)
+
+#### Sample Output on intial training :
+
+![](outputsample.gif)
+
+ - Yolo weights given below were trained on a imbalanced dataset (5000 + mask samples and < 1000 non mask samples.). So, Its performance can be poor. This model was only trained for 20K batches of batch size 64.
+
+ - Other Yolov3 models are typically trained for more than 500K batches.
+
+I am training the model on new dataset handicked and annotated using https://github.com/tzutalin/labelImg.
+
+which has 4k images of each category. So, Improvement is expected. : [link](https://github.com/archie9211/Mask-Detection-Dataset)
 
 
 ## Usage
 
 clone the repo 
 ```
-https://github.com/archie9211/majorProject/
-cd majorProject
+https://github.com/archie9211/Mask-detection-system
+cd Mask-detection-system 
 ```
 
 then download the yolo weights
@@ -31,7 +47,7 @@ you can use another flag for saving the output to a video
 ```
 run following command for full help of arguments and their uses :
 ```
-python main.py --help
+python run.py --help
 ```
 ### for training:
 
@@ -74,6 +90,15 @@ you can also train over my weights
 ./darknet detector train "obj.data" "yolov3.cfg" "../data/yolov3.weights"  -dont_show
 ```
 
+
+files to mentions :
+
+train.py
+yolov3-tf3/models.py
 ### Contributers :
 
-    Nageen Chand (16MI523) 
+Nageen Chand 
+
+### References
+https://github.com/zzh8829/yolov3-tf2
+https://medium.com/@artinte7/real-time-object-detection-using-yolo-upon-google-colab-in-5-minutes-fd65a4903df5
