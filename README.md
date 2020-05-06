@@ -91,15 +91,15 @@ you can also train over my weights
 ./darknet detector train "obj.data" "yolov3.cfg" "../data/yolov3.weights"  -dont_show
 ```
 
-
 files to mentions :
-
-train.py
-yolov3-tf3/models.py
-run.py
-detect.py
+    
+     train.py
+     yolov3-tf3/models.py
+     run.py
+     detect.py
 
 
 ### References
 https://github.com/zzh8829/yolov3-tf2 (yolo implementation)
+
 https://medium.com/@artinte7/real-time-object-detection-using-yolo-upon-google-colab-in-5-minutes-fd65a4903df5
